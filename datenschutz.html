@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="author" content="André-Pascal Werthwein" />
+  <meta name="copyright" content="André-Pascal Werthwein" />
+  <meta name="publisher" content="www.andrewerthwein.de" />
+  <meta name="title" lang="DE" content="Reiche Europas — Die Víkingr" />
+  <meta name="title" lang="EN" content="Kingdoms of Europe — The Víkingr" />
+  <meta name="page-topic" lang="DE" content="Web Design, Web Development, Navigationsdesign" />
+  <meta name="page-topic" lang="EN" content="Web Design, Web Development, Navigationsdesign" />
+  <meta name="audience" lang="DE" content="Alle" />
+  <meta name="audience" lang="EN" content="All" />
+  <meta name="page-type" lang="DE" content="Projekt-Webseite" />
+  <meta name="page-type" lang="EN" content="Project-Website" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta http-equiv="language" content="DE" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="page title">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="format-detection" content="address=no">
+  <meta name="robots" content="index, follow" />
+  <meta name="revisit-after" content="30 days" />
+  <meta name="expires" content="never" />
+  <meta name="allow-search" content="yes" />
+  <meta name="google" content="nositelinkssearchbox" />
+  <meta name="googlebot" content="noarchive" />
+  <meta name="keywords" content="Wikinger, Vikings, Víkingr, Schweden, Norwegen, Dänemark, Sweden, Norway, Denmark, Schwedisch, Norwegisch, Dänisch, Daenisch, Swedish, Dutch, Seefahrer, Krieger, Seafarer, Sea, Ocean, Warrior, Händler, Haendler, Merchant, Axt, Axe, Krieg, War, Raub, Angriff, Attacke, Überfall, Ueberfall, Plünderung, Pluenderung, Robbery, Assault, Attack, Raid, Invasion, Hochschule Mannheim, Mannheim, Fakultät für Gestaltung, Fakultaet fuer Gestaltung, Faculty of Design, Institute of Design, Fak D, Kommunikationsdesign, Communicational Design, Communication Design, Graphic Desig, Grafik Design, VND, Navigationsdesign, Navigational Design, Professor, Veruschka, Götz, Goetz, Web Design, Web Programmierung, Web Development, HTML, CSS, Javascript, Java Script, PHP, Interaction Design, User Experience Design, UX Design, Usability, Norse, Mythologie, Mythology, Myths, Asgard, Midgard, Biförst, Bifroest, Odin, Thor, Loki, Vé, Vili, Yggdrasil, Baldr, Freyja" />
+  <meta name="description" lang="DE" content="Die thematische Betrachtung des Reiches der Wikinger im Rahmen dieses Projekts ist vielschichtig. Nicht nur setzt sich das Projekt mit dem Aufstieg und Niedergang einer Reiches — wenn man hier von einem solchen sprechen kann — auseinander, sondern setzt auch das ureigene Wesen der Wikinger dem Wesen der nordischen Mythologie gegenüber. Gibt es Parallelen zwischen den Göttern und den Wikingern? Sind die Götter nur eine Projektion des Wikingergeistes? Wer hat wen nach wessen Ebenbild geschaffen?" />
+  <meta name="description" lang="EN" content="The thematic view on the Empire of the Vikings in this project is complex. Not only does the project deal with the Rise and Fall of an Empire — if it even can be called an Empire in this case — but it also exposes the essence of the Vikings to the essence of Norse Mythology. Are there any parallels between the Gods and the Vikings? Are the gods just a projection of the Viking-Spirit? Who made whom on whose likeness?" />
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="icon" type="image/png" href="favicon_32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="favicon_96x96.png" sizes="96x96">
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="fallback-touch-icon-57x57-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="fallback-touch-icon-57x57-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="60x60" href="universal-touch-icon-60x60-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-ipad1-ipad2-ipad-mini-non-retina-ios6-touch-icon-72x72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="apple-ipad1-ipad2-ipad-mini-non-retina-ios7-touch-icon-76x76-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-iphone4+-ipod-touch-retina-ios6-touch-icon-114x114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="apple-iphone4+-ipod-touch-retina-ios7-touch-icon-120x120-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-ipad-retina-ios6-touch-icon-144x144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="touch-icon-ipad.png">
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="apple-ipad-retina-ios7-touch-icon-152x152-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="167x167" href="touch-icon-ipad-retina.png">
+  <link rel="apple-touch-icon-precomposed" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="shortcut icon" sizes="196x196" href="chromeapp-touch-icon-196x196-precomposed.png">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="mstile-144x144.png">
+
+  <link rel="stylesheet" href="css/fonts.min.css" />
+  <link rel="stylesheet" href="css/reset.min.css" />
+  <link rel="stylesheet" href="css/browser.min.css" />
+  <link rel="stylesheet" href="css/typografie.min.css" />
+  <link rel="stylesheet" href="css/struktur.min.css" />
+  <link rel="stylesheet" href="css/formulare.min.css" />
+  <link rel="stylesheet" href="css/animation.min.css" />
+  <link rel="stylesheet" href="css/verbote.min.css" />
+
+  <title>Víkingr — Aufstieg und Niedergang eines Reiches</title>
+</head>
+
+<body>
+  <nav id="ThemenNavigation">
+    <section>
+      <i class="material-icons Anzeige" id="ScrollingStart">first_page</i>
+    </section>
+    <section>
+      <ul lang="de" class="AktuelleSprache" data-navigation="Sprache">
+        <li data-navigation="Sprache">Sprache</li>
+        <li data-sprache="Deutsch" class="Fett">Deutsch</li>
+        <li data-sprache="Englisch">Englisch</li>
+      </ul>
+      <ul lang="en" data-navigation="Sprache">
+        <li data-navigation="Sprache">Language</li>
+        <li data-sprache="Deutsch">German</li>
+        <li data-sprache="Englisch">English</li>
+      </ul>
+    </section>
+    <section>
+      <ul lang="de" class="AktuelleSprache" data-navigation="Thema">
+        <li data-navigation="Thema"><span class="Kommentar">[X,&nbsp;Y]&nbsp;</span>Kapitel wählen ...</li>
+        <li><a href="dokumentation.html" target="_blank" rel="noopener noreferrer"><span class="Kommentar">[D,&nbsp;D]&nbsp;</span>Dokumentation</a></li>
+        <li><a href="quellen.html" target="_blank" rel="noopener noreferrer nofollow"><span class="Kommentar">[Q,&nbsp;Q]&nbsp;</span>Quellen</a></li>
+      </ul>
+
+      <ul lang="en" data-navigation="Thema">
+        <li data-navigation="Thema"><span class="Kommentar">[X,&nbsp;Y]&nbsp;</span>Choose a chapter ...</li>
+        <li><a href="dokumentation.html" target="_blank" rel="noopener noreferrer"><span class="Kommentar">[D,&nbsp;D]&nbsp;</span>Documentation</a></li>
+        <li><a href="quellen.html" target="_blank" rel="noopener noreferrer nofollow"><span class="Kommentar">[Q,&nbsp;Q]&nbsp;</span>Sources</a></li>
+      </ul>
+    </section>
+    <section></section>
+    <section></section>
+  </nav>
+
+  <!-- Java Script Warnung -->
+  <marquee id="JavaScriptWarnung" class="Anzeige">Bitte aktivieren sie Java Script auf dieser Website für den vollen Funktionsumfang. Please activate Java Script for this website, to experience the full functionality.</marquee>
+
+  <div class="Screen">
+    <div class="KoordinatenTitel">
+      <h1>[§,&nbsp;§]</h1>
+      <h2 lang="de" class="AktuelleSprache">Die Datenschutzerklärung</h2>
+      <h2 lang="en">The Privacy Policy Statement</h2>
+    </div>
+
+    <div class="EineSpalte">
+      <section>
+        <h4 lang="de" class="AktuelleSprache">1. Der Datenschutz auf einen Blick</h4>
+        <h4 lang="en">1. The Privacy Policy at a Glance</h4>
+
+        <h5 lang="de" class="AktuelleSprache">Allgemeine Hinweise</h5>
+        <h5 lang="en">General Information</h5>
+
+        <p lang="de" class="AktuelleSprache">Hier in der Datenschutzerklärung soll ein einfacher und transparenter Überblick gegeben werden, der aufzeigt, was mit <span class="AnredeSie">Ihren</span><span class="AnredeDu">Deinen</span> personenbezogenen Daten auf dieser Webseite passiert. Personenbezogene Daten sind die Daten, anhand derer der Benutzer  dieser Website [<span class="AnredeSie">Sie</span><span class="AnredeDu">Du</span>] persönlich identifiziert werden kann.</p>
+        <p lang="en">Here in the Privacy Policy Statement a transparent overview is given, which explains what happens with personal data on this Website. Personal Data is Data, by which the User of this Website [You] can be personally identified.</p>
+
+        <p lang="de" class="AktuelleSprache">Ausführliche Informationen hierzu sind in den folgenden Abschnitten zu finden.</p>
+        <p lang="en">Detailed information can be found in the following paragraphs.</p>
+      </section>
+
+      <section>
+        <h5 lang="de" class="AktuelleSprache">Die Datenerfassung auf dieser Webseite</h5>
+        <h5 lang="en">The data collection on this Website</h5>
+
+        <h6 lang="de" class="AktuelleSprache">Wer ist auf für die Datenerfassung dieser Webseite verantwortlich?</h6>
+        <h6 lang="en">Who is responsible for the data collection on this Website?</h6>
+
+        <p lang="de" class="AktuelleSprache">Die Datenverarbeitung auf dieser Webseite erfolgt durch den Diensteanbieter <span class="Kommentar">[Seiteninhaber dieser Webseite]</span> – André-Pascal Werthwein. <span class="Kommentar">[Die Kontaktmöglichkeiten <span class="AnredeSie">finden Sie</span><span class="AnredeDu">findest Du</span> unter <q><a class="LinkText" href="kontakt.html" target="_blank" rel="noopener noreferrer nofollow">Kontakt</a></q> oder im <q><a class="LinkText" href="impressum.html" target="_blank" rel="noopener noreferrer nofollow">Impressum</a></q>.]</span></p>
+        <p lang="en">The processing of data on this Website is done by the service provider <span class="Kommentar">[Owner of this Website]</span> – André-Pascal Werthwein. <span class="Kommentar">[The contact options can be found in <q><a class="LinkText" href="kontakt.html" target="_blank" rel="noopener noreferrer nofollow">Contact</a></q> or <q><a class="LinkText" href="impressum.html" target="_blank" rel="noopener noreferrer nofollow">Imprint</a></q>.]</span></p>
+
+        <table lang="de" class="AktuelleSprache">
+          <thead></thead>
+          <tbody>
+            <tr>
+              <td>
+                <i class="material-icons">home</i>
+              </td>
+              <td>
+                <address>André-Pascal Werthwein<br>Speyerer Straße 45,<br>68199 Mannheim<br><span class="Kommentar">[Deutschland]</span></address>
+              </td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td>
+                <i class="material-icons">mail_outline</i>
+              </td>
+              <td>
+                <address>
+                  <a class="LinkText" href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#105;&#110;&#102;&#111;&#64;&#97;&#110;&#100;&#114;&#101;&#119;&#101;&#114;&#116;&#104;&#119;&#101;&#105;&#110;&#46;&#100;&#101;">info[at]<span style="display: none;">fuck-the-spam-bot</span>andrewerthwein.de</a>
+                </address>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <table lang="en">
+          <thead></thead>
+          <tbody>
+            <tr>
+              <td>
+                <i class="material-icons">home</i>
+              </td>
+              <td>
+                <address>André-Pascal Werthwein<br>Speyerer Straße 45,<br>68199 Mannheim<br><span class="Kommentar">[Germany]</span></address>
+              </td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td>
+                <i class="material-icons">mail_outline</i>
+              </td>
+              <td>
+                <address>
+                  <a class="LinkText" href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#105;&#110;&#102;&#111;&#64;&#97;&#110;&#100;&#114;&#101;&#119;&#101;&#114;&#116;&#104;&#119;&#101;&#105;&#110;&#46;&#100;&#101;">info[at]<span style="display: none;">fuck-the-spam-bot</span>andrewerthwein.de</a>
+                </address>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h6 lang="de" class="AktuelleSprache">Wie werden diese <span class="Kommentar">[<span class="AnredeSie">Ihre</span><span class="AnredeDu">Deine</span>]</span> Daten auf dieser Webseite erfasst?</h6>
+        <h6 lang="en">How is [Your] data collected on this Website?</h6>
+
+        <p lang="de" class="AktuelleSprache">Einerseits werden diese <span class="Kommentar">[<span class="AnredeSie">Ihre</span><span class="AnredeDu">Deine</span>]</span> Daten dadurch erfasst, indem Sie diese selbst mitteilen. Die geschieht beispielsweise, wenn Sie das auf dieser Webseite angebotene Kontaktformular nutzen.</p>
+        <p lang="en">On the one hand your data is collected, by you transmitting your data yourself. This for example happens, when you use the contact form provided on this Website.</p>
+
+        <p lang="de" class="AktuelleSprache">Andererseits werden diese <span class="Kommentar">[<span class="AnredeSie">Ihre</span><span class="AnredeDu">Deine</span>]</span> Daten auch automatisiert durch die auf dieser Webseite verwendeten IT-Systeme erfasst. Bei diesen Daten handelt es sich vor allem um technische Daten. Diese Daten enthalten beispielsweise den benutzten Internet Browser, das Betriebssystem oder die Uhrzeit zu der diese Webseite besucht wurde. Diese Datenerfassung geschieht automatisch sobald Sie diese Webseite betreten.</p>
+        <p lang="en">On the other hand, your data is also collected automatically by different IT-Systems implemented on this Website. This data is usually technical data. This data can for example be the Internet Browser you use, the Operating System you use or the time you entered this Website. This collection of data happens automatically, as soon as you enter this Website.</p>
+
+        <h6 lang="de" class="AktuelleSprache">Wofür werden diese <span class="Kommentar">[<span class="AnredeSie">Ihre</span><span class="AnredeDu">Deine</span>]</span> Daten genutzt?</h6>
+        <h6 lang="en">What is this [your] data used for?</h6>
+
+        <p lang="de" class="AktuelleSprache">Ein Teil der erhobenen Daten dient zur fehlerfreien Bereitstellung/Darstellung dieser Webseite. Andere Daten können dazu verwendet werden [<span class="AnredeSie">Ihr</span><span class="AnredeDu">Dein</span>] Nutzerverhalten zu analysieren.</p>
+        <p lang="en">A part of this collected data is used to provide/display this Website without errors. Other data can be used to analyze your user behavior.  </p>
+
+        <h6 lang="de" class="AktuelleSprache">Welche Rechte <span class="AnredeSie">haben Sie</span><span class="AnredeDu">hast Du</span> im Bezug auf Ihre Daten?</h6>
+        <h6 lang="en">What rights do you have, concerning your data?</h6>
+
+        <p lang="de" class="AktuelleSprache"><span class="AnredeSie">Sie haben</span><span class="AnredeDu">Du hast</span> zu jeder Zeit das Recht auf eine kostenfreie Auskunft über die Herkunft, den Empfänger, wie auch den Zweck <span class="AnredeSie">Ihrer</span><span class="AnredeDu">Deiner</span> gespeicherten, personenbezogenen Daten. Außerdem <span class="AnredeSie">haben Sie</span><span class="AnredeDu">hast Du</span> das Recht die Berichtigung, die Sperrung oder Löschung eben dieser – <span class="AnredeSie">Ihrer</span><span class="AnredeDu">Deiner</span> – gespeicherten, personenbezogenen Daten zu verlangen. Darüber hinaus haben <span class="AnredeSie">haben Sie</span><span class="AnredeDu">hast Du</span> außerdem das Recht, unter bestimmten Umständen die Verarbeitung <span class="AnredeSie">Ihrer</span><span class="AnredeDu">Deiner</span> gespeicherten, personenbezogenen Daten einzuschränken. <span class="Kommentar">[Näheres hierzu finden Sie in dem Abschnitt: <q><span class="AnredeSie">Ihr</span><span class="AnredeDu">Dein</span> Recht auf Einschränkung der Verarbeitung</q>.]</span></p>
+        <p lang="en">At any time you have the right to request information on personal data collected about you, free of charge. This information includes origin, receiver and also the purpose of the data collected. Furthermore, you have the right to request the correction, blocking and deletion of this — your — stored, personal data. You also, under certain circumstances, have the right to limit the processing of the personal data stored/collected about you. <span class="Kommentar">[Further information on this can be found in the chapter <q>Your Right to limit the Processing of personal Data</q>.]</span></p>
+
+        <p lang="de" class="AktuelleSprache">Sollten Sie Fragen zu hierzu oder allgemein zum Datenschutz auf dieser Webseite haben, <span class="AnredeSie">können Sie sich</span><span class="AnredeDu">kannst Du dich</span> gerne dazu an den Diensteanbieter <span class="Kommentar">[Seiteninhaber dieser Webseite]</span> – André-Pascal Werthwein – wenden. Entsprechende Kontaktmöglichkeiten <span class="AnredeSie">finden Sie</span><span class="AnredeDu">findest Du</span> unter <q><a class="LinkText" href="kontakt.html" target="_blank" rel="noopener noreferrer nofollow">Kontakt</a></q> oder im <q><a class="LinkText" href="impressum.html" target="_blank" rel="noopener noreferrer nofollow">Impressum</a></q>. Selbstverständlich steht <span class="AnredeSie">Ihnen</span><span class="AnredeDu">Dir</span> auch das Recht zu, sich bei der zuständigen Aufsichtsbehörde zu beschweren.</p>
+        <p lang="en">Should you have any questions concerning this or concerning Privacy Protection on this Website in general, feel free to contact the service provider <span class="Kommentar">[Owner of this Website]</span> – André-Pascal Werthwein. Contact options can be found in <q><a class="LinkText" href="kontakt.html" target="_blank" rel="noopener noreferrer nofollow">Contact</a></q> or <q><a class="LinkText" href="impressum.html" target="_blank" rel="noopener noreferrer nofollow">Imprint</a></q>. Of course, you also have the right to a file a complaint with the supervisory authority responsible.</p>
+      </section>
+
+      <section>
+        <h5 lang="de" class="AktuelleSprache">Die Analyse-Tools und Tools von Drittanbietern</h5>
+        <h5 lang="en">The Analyzing-Tools and Tools offered by third parties</h5>
+
+        <p lang="de" class="AktuelleSprache">Bei dem Besuch dieser Webseite kann <span class="AnredeSie">Ihr</span><span class="AnredeDu">Dein</span> Surf-Verhalten statistisch ausgewertet werden. Diese Analyse erfolgt dabei vor allem mithilfe von Cookies und Analyseprogrammen. Diese Analyse <span class="AnredeSie">Ihres</span><span class="AnredeDu">Deines</span> Surf-Verhaltens erfolgt in der Regel anonym und kann nicht zu <span class="AnredeSie">Ihnen</span><span class="AnredeDu">Dir</span> zurückverfolgt werden. Dieser Analyse <span class="AnredeSie">können Sie</span><span class="AnredeDu">kannst Du</span> widersprechen oder eben diese, durch die Nicht-Benutzung bestimmter Tools/Optionen verhindern. <span class="Kommentar">[Details hierzu <span class="AnredeSie">finden Sie</span><span class="AnredeDu">findest Du</span> in der nachfolgenden Datenschutzerklärung.]</span></p>
+        <p lang="en">By visiting this Website your Surfing behavior can be statistically analyzed. This analysis is made using Cookies and Analyzing-Programs. The analysis of your Surfing behavior is anonymous and can not be traced back to you. You can file an objection against this analysis, or prevent the analysis by not using certain tools/options. <span class="Kommentar">[Details on this matter can be found in the following Privacy Policy Statement.]</span></p>
+
+        <p lang="de" class="AktuelleSprache">Dieser Analyse <span class="AnredeSie">können Sie</span><span class="AnredeDu">kannst Du</span> widersprechen. Über die Widerspruchsmöglichkeiten wird in der nachfolgenden Datenschutzerklärung aufgeklärt.</p>
+        <p lang="en">You can file an objection against this analysis. The ways in which you can file an objection are explained in the following Privacy Policy Statement.</p>
+      </section>
+
+      <section>
+        <h4 lang="de" class="AktuelleSprache">2. Allgemeine Hinweise und Pflichtinformationen</h4>
+        <h4 lang="en">2. General Information and Mandatory Information</h4>
+
+        <h5 lang="de" class="AktuelleSprache">Der Datenschutz</h5>
+        <h5 lang="en">The Data Protection</h5>
+
+        <p lang="de" class="AktuelleSprache">Der Diensteanbieter <span class="Kommentar">[Seiteninhaber dieser Webseite]</span> – André-Pascal Werthwein – nimmt den Schutz <span class="AnredeSie">Ihrer</span><span class="AnredeDu">Deiner</span> Daten ernst. Die auf dieser Webseite erhobenen Daten – <span class="AnredeSie">Ihre</span><span class="AnredeDu">Deine</span> personenbezogenen Daten – werden vertraulich und den gesetzlichen Datenschutzvorschriften, wie auch dieser Datenschutzerklärung entsprechend behandelt.</p>
+        <p lang="en">The service provider <span class="Kommentar">[Owner of this Website]</span> – André-Pascal Werthwein — takes the protection of your data seriously. The data collected on this webste is treated confidentially and in accordance with the legal data protection regulations as well as this privacy policy statement.</p>
+
+        <p lang="de" class="AktuelleSprache">Wenn <span class="AnredeSie">Sie</span><span class="AnredeDu">Du</span> diese Seite <span class="AnredeSie">benutzen</span><span class="AnredeDu">benutzt</span>, dann werden diverse personenbezogene Daten erhoben. Unter <q>Personenbezogenen Daten</q> sind Daten zu verstehen, anhand derer <span class="AnredeSie">Sie</span><span class="AnredeDu">Du</span> persönlich identifiziert <span class="AnredeSie">werden können</span><span class="AnredeDu">werden kannst</span>. Die hier vorliegende Datenschutzerklärung fasst zusammen, welche Daten und zu welchem Zweck eben diese Daten erhoben werden. Außerdem erklärt die Datenschutzerklärung, wofür diese Daten schlussendlich genutzt werden.</p>
+        <p lang="en">When using this Website, various personal data is collected. <q>Personal Data</q> is to be understood as data which makes it possible to personally identify you. This Privacy Policy Statement sums up, what data is collected and what this data is collected for. Furthermore, this Privacy Policy Statement also explains, what the collected data is used for.</p>
+
+        <p lang="de" class="AktuelleSprache">Es wird daraufhin gewiesen, dass die Datenübertragung im Internet <span class="Kommentar">[Bsp.: Kommunikation via E-Mail]</span> Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der erhobenen Daten vor dem Zugriff Dritter ist demnach also nicht möglich.</p>
+        <p lang="en">It is pointed out, that the communication on the internet <span class="Kommentar">[e.g.: Communication via E-Mail]</span> can have security breaches. A complete protection of the collected data from access by third parties is therefore not possible.</p>
+      </section>
+
+      <section>
+        <h5 lang="de" class="AktuelleSprache">Der Hinweis zur verantwortlichen Stelle</h5>
+        <h5 lang="en">The Information on the responsible Office/Person</h5>
+
+        <p lang="de" class="AktuelleSprache">Die verantwortliche Stelle für die Datenverarbeitung auf dieser Webseite ist der Diensteanbieter <span class="Kommentar">[Seiteninhaber dieser Webseite]</span> – André-Pascal Werthwein.</p>
+        <p lang="en">Responsible for the processing of data collected by this Website is the service provider <span class="Kommentar">[Owner of this Website]</span> – André-Pascal Werthwein.</p>
+
+        <table lang="de" class="AktuelleSprache">
+          <thead></thead>
+          <tbody>
+            <tr>
+              <td>
+                <i class="material-icons">home</i>
+              </td>
+              <td>
+                <address>André-Pascal Werthwein<br>Speyerer Straße 45,<br>68199 Mannheim<br><span class="Kommentar">[Deutschland]</span></address>
+              </td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td>
+                <i class="material-icons">mail_outline</i>
+              </td>
+              <td>
+                <address>
+                  <a class="LinkText" href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#105;&#110;&#102;&#111;&#64;&#97;&#110;&#100;&#114;&#101;&#119;&#101;&#114;&#116;&#104;&#119;&#101;&#105;&#110;&#46;&#100;&#101;">info[at]<span style="display: none;">fuck-the-spam-bot</span>andrewerthwein.de</a>
+                </address>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <table lang="en">
+          <thead></thead>
+          <tbody>
+            <tr>
+              <td>
+                <i class="material-icons">home</i>
+              </td>
+              <td>
+                <address>André-Pascal Werthwein<br>Speyerer Straße 45,<br>68199 Mannheim<br><span class="Kommentar">[Germany]</span></address>
+              </td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td>
+                <i class="material-icons">mail_outline</i>
+              </td>
+              <td>
+                <address>
+                  <a class="LinkText" href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#105;&#110;&#102;&#111;&#64;&#97;&#110;&#100;&#114;&#101;&#119;&#101;&#114;&#116;&#104;&#119;&#101;&#105;&#110;&#46;&#100;&#101;">info[at]<span style="display: none;">fuck-the-spam-bot</span>andrewerthwein.de</a>
+                </address>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p lang="de" class="AktuelleSprache">Diese verantwortliche Stelle ist eine natürliche oder juristische Person, die allein oder auch in Zusammenarbeit mit anderen, sowohl über die Zwecke, als auch die Mittel der Verarbeitung von personenbezogenen Daten entscheidet.</p>
+        <p lang="en">This responsible Office/Person is a natural or legal person, who alone or in cooperation with others, decides about the purpose as well as the means of the processing of personal data on this Website.</p>
+      </section>
+
+      <section>
+        <h5 lang="de" class="AktuelleSprache"><span class="AnredeSie">Ihr</span><span class="AnredeDu">Dein</span> Widerruf <span class="AnredeSie">Ihrer</span><span class="AnredeDu">Deiner</span> Einwilligung zur Datenverarbeitung</h5>
+        <h5 lang="en">Your revocation of your consent to Data Processing</h5>
+
+        <p lang="de" class="AktuelleSprache">Viele der Vorgänge in denen Daten verarbeitet werden, sind nur mit <span class="AnredeSie">Ihrer</span><span class="AnredeDu">Deiner</span> ausdrücklichen Einwilligung möglich. Nach einer solchen Einwilligung <span class="AnredeSie">können Sie</span><span class="AnredeDu">kannst Du</span> zu jeder Zeit eben diese – bereits erteilte – Einwilligung widerrufen. Für diesen Widerruf ist eine formlose Mitteilung ausreichend. <span class="Kommentar">[Die Kontaktmöglichkeiten <span class="AnredeSie">finden Sie</span><span class="AnredeDu">findest Du</span> unter <q><a class="LinkText" href="kontakt.html" target="_blank" rel="noopener noreferrer nofollow">Kontakt</a></q> oder im <q><a class="LinkText" href="impressum.html" target="_blank" rel="noopener noreferrer nofollow">Impressum</a></q>.]</span></p>
+        <p lang="en">Viele der Vorgänge in denen Daten verarbeitet werden, sind nur mit <span class="AnredeSie">Ihrer</span><span class="AnredeDu">Deiner</span> ausdrücklichen Einwilligung möglich. Nach einer solchen Einwilligung <span class="AnredeSie">können Sie</span><span class="AnredeDu">kannst Du</span> zu jeder Zeit eben diese – bereits erteilte – Einwilligung widerrufen. Für diesen Widerruf ist eine formlose Mitteilung ausreichend. <span class="Kommentar">[Die Kontaktmöglichkeiten <span class="AnredeSie">finden Sie</span><span class="AnredeDu">findest Du</span> unter <q><a class="LinkText" href="kontakt.html" target="_blank" rel="noopener noreferrer nofollow">Kontakt</a></q> oder im <q><a class="LinkText" href="impressum.html" target="_blank" rel="noopener noreferrer nofollow">Impressum</a></q>.]</span></p>
+
+        <p lang="de" class="AktuelleSprache">Die Rechtmäßigkeit der bis zu besagtem Widerruf erfolgten Datenverarbeitung, bleibt von dem Widerruf unberührt.</p>
+        <p lang="en">The legitimacy of the processing of data, before the moment of revocation, remains unaffected by the revocation.</p>
+      </section>
+
+      <section class="Fett">
+        <h5 lang="de" class="AktuelleSprache"><span class="AnredeSie">Ihr</span><span class="AnredeDu">Dein</span> Widerspruchsrecht gegen die Datenerhebung in besonderen Fällen sowie gegen Direktwerbung [Art. 21 DSGVO]</h5>
+        <h5 lang="en">Your Right of Revocation against the collection of data in special cases as well as against Direct Advertising [Art. 21 DSGVO]</h5>
+
+        <p lang="de" class="AktuelleSprache">Wenn die Datenverarbeitung auf Basis der DSGVO-Bestimmungen <sup>[Art. 6 Abs. 1 lit. e oder f DSGVO]</sup> erfolgt, <span class="AnredeSie">haben Sie</span><span class="AnredeDu">hast Du</span> zu jeder Zeit das Recht, aus Gründen, die sich aus <span class="AnredeSie">Ihrer</span><span class="AnredeDu">Deiner</span> persönlichen Situation ergeben, gegen die Verarbeitung <span class="AnredeSie">Ihrer</span><span class="AnredeDu">Deiner</span> personenbezogenen Daten Widerspruch einzulegen. Dies gilt auch für ein auf diese Bestimmungen gestütztes <dfn><abbr title="Erstellung eines Gesamtbildes einer Persönlichkeit">Profiling</abbr> <span class="Kommentar">[= Erstellung eines Gesamtbildes einer Persönlichkeit]</span></dfn> Die jeweilige Rechtsgrundlage, auf der eine Datenverarbeitung auf dieser Webseite beruht, kann dieser Datenschutzerklärung entnommen werden.</p>
+        <p lang="en">If the data is processed on the basis of DSGVO-Regulations <sup>[Art. 6 Para. 1 lit. e or f DSGVO]</sup>, you have — at any time — the right, for reasons that arise from their personal situation, to file an objection against the processing of your personal data. This also applies to <dfn><abbr title="Creating a complete picture of a Personality">Profiling</abbr> <span class="Kommentar">[= Creating a complete picture of a Personality]</span></dfn>, based on these regulations. The respective legal basis on which data processing is based on this Website can be found in this Privacy Policy.</p>
+
+        <p lang="de" class="AktuelleSprache">Wenn <span class="AnredeSie">Sie</span><span class="AnredeDu">Du</span> Widerspruch <span class="AnredeSie">einlegen</span><span class="AnredeDu">einlegst</span>, werden <span class="AnredeSie">Ihre</span><span class="AnredeDu">Deine</span> betroffenen, personenbezogenen Daten nicht mehr verarbeitet, es sei denn, es können zwingende, schutzwürdige Gründe für die Datenverarbeitung nachgewiesen werden, die <span class="AnredeSie">Ihre</span><span class="AnredeDu">Deine</span> Interessen, Rechte und Freiheiten überwiegen. Eine weitere Ausnahme besteht hier dann, wenn eben diese Datenverarbeitung auch der Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen dient. <sup>[Art. 21 Abs. 1 DSGVO]</sup></p>
+        <p lang="en">If you file an objection, the affected, personal data is no longer processed, unless there are compelling, legitimate reasons for the processing of the data that outweigh your interests, rights and freedoms. Another exception applies if the data processing serves the Assertion, Exercise or Defense of legal claims. <sup>[Art. 21 Para. 1 DSGVO]</sup></p>
+
+        <p lang="de" class="AktuelleSprache">Dient die Verarbeitung <span class="AnredeSie">Ihrer</span><span class="AnredeDu">Deiner</span> personenbezogenen Daten der Direktwerbung, dann <span class="AnredeSie">haben Sie</span><span class="AnredeDu">hast Du</span> zu jeder Zeit das Recht dieser Verarbeitung <span class="AnredeSie">Ihrer</span><span class="AnredeDu">Deiner</span> personenbezogenen Daten – zum Zweck derartiger Werbung – zu widersprechen. Dies gilt auch für das <dfn><abbr title="Erstellung eines Gesamtbildes einer Persönlichkeit">Profiling</abbr> <span class="Kommentar">[= Erstellung eines Gesamtbildes einer Persönlichkeit]</span></dfn> sofern dieses mit derartiger Direktwerbung zusammenhängt. Auf <span class="AnredeSie">Ihren</span><span class="AnredeDu">Deinen</span> Widerspruch hin werden <span class="AnredeSie">Ihre</span><span class="AnredeDu">Deine</span> personenbezogenen Daten nicht mehr für derartige Werbung verwendet. <sup>[Widerspruch nach Art. 21 Abs. 2 DSGVO]</sup></p>
+        <p lang="en">If personal data is processed for Direct Advertising, you — at any time — have the right to file an objection against the processing of personal data, for the purpose of Direct Advertising. This also applies to <dfn><abbr title="Creating a complete picture of a Personality">Profiling</abbr> <span class="Kommentar">[= Creating a complete picture of a Personality]</span></dfn>, if it is connected to such Direct
+          Advertising. After your objection, no more personal data is processed for the purpose of Direct Advertising.</p>
+      </section>
+
+      <section>
+        <h5 lang="de" class="AktuelleSprache"><span class="AnredeSie">Ihr</span><span class="AnredeDu">Dein</span> Beschwerderecht bei der zuständigen Aufsichtsbehörde</h5>
+        <h5 lang="en">Your Right to file a complaint with the Supervisory Authority responsible</h5>
+
+        <p lang="de" class="AktuelleSprache">Bei Verstößen gegen die DSGVO besteht für den Betroffenen ein Beschwerderecht bei einer Aufsichtsbehörde,</p>
+        <p lang="en">If there are infringements of the DSGVO there is, for the person affected, a right to file a complaint with the Supervisory Authority responsible,</p>
+
+        <ul lang="de" class="Liste AktuelleSprache">
+          <li>im Mitgliedsstaat <span class="Kommentar">[der Europäischen Union]</span> <span class="AnredeSie">Ihres</span><span class="AnredeDu">Deines</span> gewöhnlichen Aufenthalts</li>
+          <li>im Mitgliedsstaat <span class="Kommentar">[der Europäischen Union]</span> <span class="AnredeSie">Ihres</span><span class="AnredeDu">Deines</span> Arbeitsplatzes</li>
+          <li>am Ort des mutmaßlichen Verstoßes</li>
+        </ul>
+        <ul lang="en" class="Liste">
+          <li>in the Member State <span class="Kommentar">[of the European Union]</span> of your habitual residence.</li>
+          <li>in the Member State <span class="Kommentar">[of the European Union]</span> of your ordinary workplace.</li>
+          <li>at the place of the presumed infringement.</li>
+        </ul>
+
+        <p lang="de" class="AktuelleSprache">zu. Dieses Beschwerderecht besteht unbeschadet anderweitiger, verwaltungsrechtlicher oder gerichtlicher <dfn><abbr title="rechtliches Mittel der Anfechtung einer behördlichen beziehungsweise gerichtlichen Entscheidung">Rechtsbehelfe</abbr>. <span class="Kommentar">[= rechtliches Mittel der Anfechtung einer behördlichen beziehungsweise gerichtlichen Entscheidung]</span></dfn></p>
+        <p lang="en">This right of complaint applies, regardless of other legal, administrative or <dfn><abbr title="legal means of contesting an administrative or judicial decision">judicial remedies</abbr>. <span class="Kommentar">[= legal means of contesting an administrative or judicial decision]</span></dfn></p>
+      </section>
+
+      <section>
+        <h5 lang="de" class="AktuelleSprache"><span class="AnredeSie">Ihr</span><span class="AnredeDu">Dein</span> Recht auf Datenübertragbarkeit</h5>
+        <h5 lang="en">Your Right for Data Transferability</h5>
+
+        <p lang="de" class="AktuelleSprache"><span class="AnredeSie">Sie haben</span><span class="AnredeDu">Du hast</span> das Recht auf Aushändigung – an <span class="AnredeSie">sich</span><span class="AnredeDu">dich</span> oder einen Dritten – von Daten in gängigen, maschinenlesbaren Formaten, die auf Basis <span class="AnredeSie">Ihrer</span><span class="AnredeDu">Deiner</span> Einwilligung oder in Erfüllung eines Vertrages, automatisiert verarbeitet werden.</p>
+        <p lang="en">You have the right for the delivery of data, which is automatically processed on the basis of your consent or the basis of a contract. According to this right, the data is delivered to you — or a third party — in common, machine-readable formats.</p>
+
+        <p lang="de" class="AktuelleSprache">Sofern <span class="AnredeSie">Sie</span><span class="AnredeDu">Du</span> die Übertragung der Daten an einen anderen Verantwortlichen <span class="AnredeSie">wünschen</span><span class="AnredeDu">wünschst</span>, erfolgt dies nur im Rahmen der technischen Machbarkeit.</p>
+        <p lang="en">If you request the delivery of the aforementioned data to a third party, this delivery is only made within technical feasibility.</p>
+      </section>
+
+      <section>
+        <h5 lang="de" class="AktuelleSprache">Die SSL- oder TLS-Verschlüsselung</h5>
+        <h5 lang="en">The SSL- or TLS-Encoding</h5>
+
+        <p lang="de" class="AktuelleSprache">Diese Webseite nutzt aus Sicherheitsgründen, wie auch zum Schutz der Übertragung von vertraulichen Daten <span class="Kommentar">[Bsp.: Anfragen]</span>, die an den Seitenbetreiber gesendet werden, eine SSL- beziehungsweise TLS-Verschlüsselung. Diese verschlüsselte Verbindung kann anhand des Schloss-Symbols oder an dem <q>https://</q> in der <dfn><abbr title="Adresse der Webseite">URL</abbr> <span class="Kommentar">[= Adresse der Webseite]</span></dfn> in der Adresszeile Ihres Internet Browsers erkannt werden. <span class="Kommentar">[In manchen Browsern ist das Schloss-Symbol zusätzlich grün eingefärbt.]</span></p>
+        <p lang="en">For safety reasons, this Website uses for the transmission of confidential data <span class="Kommentar">[e.g.: Requests]</span>, that is sent to the service provider, the SSL- or TLS-Encoding. This encoded connection can be recognized by the Lock-Symbol or the <q>https://</q> in the<dfn><abbr title="Address of the Website">URL</abbr> <span class="Kommentar">[= Address of the Website]</span></dfn> in the address bar of your Internet Browser. <span class="Kommentar">[In some Internet Browsers the Lock-Symbol is additionally colored green.]</span></p>
+
+        <p lang="de" class="AktuelleSprache">Wenn die Verschlüsselung aktiviert ist, können Daten, die Sie übermitteln, nicht von Dritten eingesehen werden.</p>
+        <p lang="en">If the encoding is active, that data, you send, can not be viewed by third parties.</p>
+      </section>
+
+      <section>
+        <h5 lang="de" class="AktuelleSprache">Auskunft, Sperrung, Löschung und Berichtigung</h5>
+        <h5 lang="en">Information, Blocking, Deletion and Correction</h5>
+
+        <p lang="de" class="AktuelleSprache">Im Rahmen der geltenden, gesetzlichen Bestimmungen <span class="AnredeSie">haben Sie</span><span class="AnredeDu">hast Du</span> zu jeder Zeit das Recht auf eine kostenfreie Auskunft über die Ihre gespeicherten, personenbezogenen Daten:</p>
+        <p lang="en">Within applying, legal regulations, you — at any time — have the right on Information about your stored/collected personal data, free of charge:</p>
+
+        <ul lang="de" class="Liste AktuelleSprache">
+          <li>Herkunft</li>
+          <li>Empfänger</li>
+          <li>Zweck der Datenverarbeitung</li>
+        </ul>
+        <ul lang="en" class="Liste">
+          <li>Origin</li>
+          <li>Receiver</li>
+          <li>Purpose of the Data Processing</li>
+        </ul>
+
+        <p lang="de" class="AktuelleSprache">Außerdem <span class="AnredeSie">haben Sie</span><span class="AnredeDu">hast Du</span> das Recht auf Berichtigung, Sperrung oder Löschung eben dieser Daten. Sofern weitere Fragen zu diesem Thema bestehen, <span class="AnredeSie">können Sie</span><span class="AnredeDu">kannst Du</span> gerne die Kontaktmöglichkeiten – zu finden unter <q><a class="LinkText" href="kontakt.html" target="_blank" rel="noopener noreferrer nofollow">Kontakt</a></q> oder <q><a class="LinkText" href="impressum.html" target="_blank" rel="noopener noreferrer nofollow">Impressum</a></q> – nutzen.</p>
+        <p lang="en">Furthermore, you have the right of Correction, Blocking or Deletion of the mentioned data. If there are questions on this matter, feel free to use the contact options, to be found in <q><a class="LinkText" href="kontakt.html" target="_blank" rel="noopener noreferrer nofollow">Contact</a></q> or <q><a class="LinkText" href="impressum.html" target="_blank" rel="noopener noreferrer nofollow">Imprint</a></q>.</p>
+      </section>
+
+      <section>
+        <h5 lang="de" class="AktuelleSprache"><span class="AnredeSie">Ihr</span><span class="AnredeDu">Dein</span> Recht auf Einschränkung der Verarbeitung</h5>
+        <h5 lang="en">Your Right to limit the Processing of personal Data</h5>
+
+        <p lang="de" class="AktuelleSprache"><span class="AnredeSie">Sie haben</span><span class="AnredeDu">Du hast</span> das Recht die Einschränkung der Verarbeitung <span class="AnredeSie">Ihrer</span><span class="AnredeDu">Deiner</span> gespeicherten, personenbezogenen Daten zu verlangen. Hierzu <span class="AnredeSie">können Sie</span><span class="AnredeDu">kannst Du</span> gerne die Kontaktmöglichkeiten – zu finden unter <q><a class="LinkText" href="kontakt.html" target="_blank" rel="noopener noreferrer nofollow">Kontakt</a></q> oder <q><a class="LinkText" href="impressum.html" target="_blank" rel="noopener noreferrer nofollow">Impressum</a></q> – nutzen.</p>
+        <p lang="en">You have the right to limit the processing of your stored/collected personal data. In this matter you can use the contact options provided in <q><a class="LinkText" href="kontakt.html" target="_blank" rel="noopener noreferrer nofollow">Contact</a></q> or <q><a class="LinkText" href="impressum.html" target="_blank" rel="noopener noreferrer nofollow">Imprint</a></q>.</p>
+
+        <p lang="de" class="AktuelleSprache"><span class="AnredeSie">Ihr</span><span class="AnredeDu">Dein</span> Recht auf <q>Einschränkung der Verarbeitung</q> besteht in folgenden Fällen:</p>
+        <p lang="en">Your right for the <q>Limitation of Processing</q> is applicable in the following cases:</p>
+
+        <ul lang="de" class="Liste AktuelleSprache">
+          <li><span class="AnredeSie">Bestreiten Sie</span><span class="AnredeDu">Bestreitest Du</span> die Richtigkeit <span class="AnredeSie">Ihrer</span><span class="AnredeDu">Deiner</span> gespeicherten, personenbezogenen Daten, <span class="AnredeSie">können Sie</span><span class="AnredeDu">kannst Du</span> bis zur vollständigen Prüfung oder Richtigstellung dieser Daten eine Einschränkung der Verarbeitung dieser Daten verlangen.</li>
+          <li>Sollte die Erhebung <span class="AnredeSie">Ihrer</span><span class="AnredeDu">Deiner</span> personenbezogenen Daten unrechtmäßig erfolgen/erfolgt sein, <span class="AnredeSie">können Sie</span><span class="AnredeDu">kannst Du</span> statt der Löschung eine Einschränkung der Verarbeitung dieser Daten verlangen.</li>
+          <li>Wenn die von <span class="AnredeSie">Ihnen</span><span class="AnredeDu">Dir</span> gespeicherten, personenbezogenen Daten vonseiten des Seitenbetreibers nicht mehr benötigt werden, <span class="AnredeSie">können Sie</span><span class="AnredeDu">kannst Du</span> dennoch – zur Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen – statt der Löschung eine Einschränkung der Verarbeitung dieser Daten verlangen.</li>
+          <li>Wenn <span class="AnredeSie">Sie</span><span class="AnredeDu">Du</span> einen Widerspruch nach Art. 21 Abs. 1 DSGVO eingelegt haben, muss eine Interessensabwägung — zwischen <span class="AnredeSie">Ihren</span><span class="AnredeDu">Deinen</span> und den Interessen des Seitenbetreibers — vorgenommen werden. Für die Dauer dieser Abwägung und bis zu der daraus hervorgehenden Entscheidung <span class="AnredeSie">können Sie</span><span class="AnredeDu">kannst Du</span> eine Einschränkung der Verarbeitung dieser <span class="AnredeSie">Ihrer</span><span class="AnredeDu">Deiner</span> personenbezogenen Daten verlangen.</li>
+        </ul>
+        <ul lang="en" class="Liste">
+          <li>If you deny the correctness of the pesonal data stored/collected of you, you have the right to limit the processing of your personal data, until the data was checked or corrected completely.</li>
+          <li>If the collection of your personal data was unlawful, you can also limit the processing of your personal data, instead of requesting the deletion.</li>
+          <li>If your stored/collected personal data is not needed by the service provider anymore, you have — for the Assertion, Exercise oder Defense of legal claims — the right to request the limitation of the processing of your data.</li>
+          <li>If you filed an objection in accordance with Art. 21 Para. 1 DSGVO, an Assessment of interests is necessary. For the time of this Assessment you have the right to limit the processing of your stored/collected personal data.</li>
+        </ul>
+
+        <p lang="de" class="AktuelleSprache">Wenn <span class="AnredeSie">Sie</span><span class="AnredeDu">Du</span> die Verarbeitung <span class="AnredeSie">Ihrer</span><span class="AnredeDu">Deiner</span> personenbezogenen Daten eingeschränkt <span class="AnredeSie">haben</span><span class="AnredeDu">hast</span>, dann dürfen diese Daten, von der Speicherung abgesehen, nicht mehr verarbeitet werden. Die Ausnahmen hierfür sind,</p>
+        <p lang="en">If you have limited the processing of your personal data, then this data is, except for its storage, not to be processed anymore. The following exceptions apply:</p>
+
+        <ul lang="de" class="Liste AktuelleSprache">
+          <li><span class="AnredeSie">Ihre</span><span class="AnredeDu">Deine</span> Einwilligung zur Verarbeitung <span class="AnredeSie">Ihrer</span><span class="AnredeDu">Deiner</span> personenbezogenen Daten</li>
+          <li>die Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen</li>
+          <li>der Schutz von Rechten dritter natürlicher oder juristischer Personen</li>
+          <li>ein wichtiges öffentliches Interesse der Europäischen Union</li>
+          <li>ein wichtiges öffentliches Interesse eines Mitgliedsstaates <span class="Kommentar">[der Europäischen Union]</span></li>
+        </ul>
+        <ul lang="en" class="Liste">
+          <li>Your consent for the processing of your personal data</li>
+          <li>the Assertion, Exercise or Defense of legal claims</li>
+          <li>the protection of the rights of third, natural or legal persons</li>
+          <li>an important public interest of the European Union</li>
+          <li>an important public interest of a Member State <span class="Kommentar">[of the European Union]</span></li>
+        </ul>
+      </section>
+
+      <section>
+        <h4 lang="de" class="AktuelleSprache">3. Die Datenerfassung auf dieser Webseite</h4>
+        <h4 lang="en">3. The collection of Data on this Website</h4>
+
+        <h5 lang="de" class="AktuelleSprache">Server-Log-Dateien</h5>
+        <h5 lang="en">Server-Log-Files</h5>
+
+        <p lang="de" class="AktuelleSprache">Der Provider, der den Web Space für das Hosting dieser Webseite zur Verfügung stellt, speichert automatisch sogenannte Server-Log-Dateien, die Ihr Internet Browser automatisch übermittelt:</p>
+        <p lang="en">The provider, who provides the Web Space for the Hosting of this Website, automatically saves so-called Server-Log-Files, which are automatically transmitted by your Internet Brower.</p>
+
+        <ul lang="de" class="Liste AktuelleSprache">
+          <li>[Anonymisierte] IP-Adresse</li>
+          <li><dfn><abbr title="Die Uhrzeit zu der Sie/Du diese Webseite betreten/betrittst. Die Uhrzeit der Serveranfrage.">Zeitstempel</abbr> <span class="Kommentar">[= Die Uhrzeit zu der <span class="AnredeSie">Sie</span><span class="AnredeDu">Du</span> diese Webseite <span class="AnredeSie">betreten</span><span class="AnredeDu">betrittst</span>. Die Uhrzeit der Serveranfrage.]</span></dfn></li>
+          <li><dfn><abbr title="angewählte Verlinkungen von Inhalten">Request-Zeile</abbr> <span class="Kommentar">[= angewählte Verlinkungen von Inhalten]</span></dfn></li>
+          <li><dfn><abbr title="Speichern von Errors in der Darstellung der Webseite, Bsp.: Error 404 Seiten">Status Code</abbr> <span class="Kommentar">[= Speichern von Errors in der Darstellung der Webseite, Bsp.: Error 404 Seiten]</span></dfn></li>
+          <li><dfn><abbr title="Größe der beim Aufruf der Webseite geladenen Daten">Größe der Response Bodies</abbr> <span class="Kommentar">[= Größe der beim Aufruf der Webseite geladenen Daten.]</span></dfn></li>
+          <li><dfn><abbr title="Die Adresse der Webseite von welcher Sie/Du auf diese Webseite navigiert haben/hast.">Referrer URL</abbr> <span class="Kommentar">[= Die Adresse der Webseite von welcher <span class="AnredeSie">Sie</span><span class="AnredeDu">Du</span> auf diese Webseite navigiert <span class="AnredeSie">haben</span><span class="AnredeDu">hast</span>.]</span></dfn></li>
+          <li>Hostname des zugreifenden Computers</li>
+          <li><dfn><abbr title="Browsertyp, Browserversion, Betriebssystem">User Agent</abbr> <span class="Kommentar">[= Browsertyp, Browserversion, Betriebssystem]</span></dfn></li>
+          <li class="Kommentar">[Remote User – veraltete Technologie]</li>
+        </ul>
+        <ul lang="en" class="Liste">
+          <li>[Anonymized] IP-Address</li>
+          <li><dfn><abbr title="The Time of the moment on which you enter this Website. The Time of the server request.">Timestamp</abbr> <span class="Kommentar">[= The Time of the moment on which you enter this Website. The Time of the server request.]</span></dfn></li>
+          <li><dfn><abbr title="clicked Links of Contents">Request Line</abbr> <span class="Kommentar">[= clicked Links of Contents]</span></dfn></li>
+          <li><dfn><abbr title="Storage of Error in the display of the Website, e.g.: Error 404 Pages">Status Code</abbr> <span class="Kommentar">[= Storage of Error in the display of the Website, e.g.: Error 404 Pages]</span></dfn></li>
+          <li><dfn><abbr title="Size of the Data, which is loaded when the Website is loaded.">Size of the Response Bodies</abbr> <span class="Kommentar">[= Size of the Data, which is loaded when the Website is loaded.]</span></dfn></li>
+          <li><dfn><abbr title="The address of the Website from which you navigated to this Website.">Referrer URL</abbr> <span class="Kommentar">[= The address of the Website from which you navigated to this Website.]</span></dfn></li>
+          <li>Hostname of the accessing Computer</li>
+          <li><dfn><abbr title="Type of Internet Browser, Version of Internet Browser, Operating System">User Agent</abbr> <span class="Kommentar">[= Type of Internet Browser, Version of Internet Browser, Operating System]</span></dfn></li>
+          <li class="Kommentar">[Remote User – outdated Technology]</li>
+        </ul>
+
+        <p lang="de" class="AktuelleSprache">Diese erhobenen Daten werden nicht mit Daten aus anderen Quellen zusammengeführt.</p>
+        <p lang="en">This collected is not merged with data from other sources.</p>
+
+        <p lang="de" class="AktuelleSprache">Die Erfassung dieser Daten erfolgt nach Art. 6 Abs. 1 lit. f DSGVO. Der Diensteanbieter <span class="Kommentar">[Seiteninhaber dieser Webseite]</span> – André-Pascal Werthwein – hat ein berechtigtes Interesse an der technisch fehlerfreien Darstellung und der Optimierung der betriebenen Webseite. Um dies zu gewährleisten, müssen Server-Log-Dateien erhoben werden.</p>
+        <p lang="en">The data is collected in accordance with  Art. 6 Para. 1 lit. f DSGVO. The service provider <span class="Kommentar">[Owner of this Website]</span> – André-Pascal Werthwein —  has a legitimate interest in the technical flawless display and optimization of the operated Website. To ensure this, Server-Log-Files must be collected.</p>
+      </section>
+
+      <section>
+        <h5 lang="de" class="AktuelleSprache">Kontaktformular</h5>
+        <h5 lang="en">Contact Form</h5>
+
+        <p lang="de" class="AktuelleSprache">Wenn <span class="AnredeSie">Sie</span><span class="AnredeDu">Du</span> das auf dieser Webseite angebotene Kontaktformular <span class="AnredeSie">nutzen</span><span class="AnredeDu">nutzt</span>, werden die von <span class="AnredeSie">Ihnen</span><span class="AnredeDu">Dir</span> darin angegebenen Daten <span class="Kommentar">[inklusive Ihrer Kontaktdaten]</span> für die Bearbeitung <span class="AnredeSie">Ihrer</span><span class="AnredeDu">Deiner</span> Anfrage, wie auch für etwaige Anschlussfragen gespeichert. Diese Daten werden nicht ohne <span class="AnredeSie">Ihre</span><span class="AnredeDu">Deine</span> Genehmigung weitergegeben.</p>
+        <p lang="en">If you use the contact form provided on this Website, the data of the request <span class="Kommentar">[including your Contact Information]</span> is stored for the processing of your request, as well as for possible follow-up questions. This data is not passed on, without your consent.</p>
+
+        <p lang="de" class="AktuelleSprache">Die Verarbeitung der Daten, die <span class="AnredeSie">Sie</span><span class="AnredeDu">Du</span> in dem Kontaktformular <span class="AnredeSie">bereitstellen</span><span class="AnredeDu">bereitstellst</span>, erfolgt damit also ausschließlich auf der Basis <span class="AnredeSie">Ihrer</span><span class="AnredeDu">Deiner</span> Einwilligung. <sup>[Art. 6 Abs. 1 lit. a DSGVO]</sup> Diese Einwilligung können Sie zu jeder Zeit widerrufen. Für diesen Widerruf ist eine formlose Mitteilung ausreichend. <span class="Kommentar">[Die Kontaktmöglichkeiten <span class="AnredeSie">finden Sie</span><span class="AnredeDu">findest Du</span> unter <q><a class="LinkText" href="kontakt.html" target="_blank" rel="noopener noreferrer nofollow">Kontakt</a></q> oder im <q><a class="LinkText" href="impressum.html" target="_blank" rel="noopener noreferrer nofollow">Impressum</a></q>.]</span> Die Rechtmäßigkeit der bis zu <span class="AnredeSie">Ihrem</span><span class="AnredeDu">Deinem</span> Widerruf erfolgten Datenverarbeitung, bleibt von dem Widerruf unberührt.</p>
+        <p lang="en">The processing of the data you provided in the contact form is only done on the basis of your consent. <sup>[Art. 6 Para. 1 lit. a DSGVO]</sup> You can — at any time — revoke that consent. For this revocation an informal notification is sufficient. <span class="Kommentar">[The contact options can be found in <q><a class="LinkText" href="kontakt.html" target="_blank" rel="noopener noreferrer nofollow">Contact</a></q> or <q><a class="LinkText" href="impressum.html" target="_blank" rel="noopener noreferrer nofollow">Imprint</a></q>.]</span> The legitimacy of the processing of data, before the moment of revocation, remains unaffected by the revocation.</p>
+
+        <p lang="de" class="AktuelleSprache">Die von <span class="AnredeSie">Ihnen</span><span class="AnredeDu">Dir</span>, über das Kontaktformular, übermittelten Daten werden vom Diensteanbieter <span class="Kommentar">[Seiteninhaber dieser Webseite]</span> – André-Pascal Werthwein – gespeichert. Diese Daten werden so lange gespeichert bis,</p>
+        <p lang="en">The data that was transmitted by you using the contact form is stored by the service provider <span class="Kommentar">[Owner of this Website]</span> – André-Pascal Werthwein. This data is stored until</p>
+
+        <ul lang="de" class="Liste AktuelleSprache">
+          <li><span class="AnredeSie">Sie</span><span class="AnredeDu">Du</span> die Löschung, der von <span class="AnredeSie">Ihnen</span><span class="AnredeDu">Dir</span> gespeicherten, personenbezogenen Daten verlangen.</li>
+          <li><span class="AnredeSie">Sie Ihre</span><span class="AnredeDu">Du Deine</span> Einwilligung zur Speicherung der von <span class="AnredeSie">Ihnen</span><span class="AnredeDu">Dir</span> gespeicherten, personenbezogenen Daten widerrufen.</li>
+          <li>der Zweck für die Speicherung <span class="AnredeSie">Ihrer</span><span class="AnredeDu">Deiner</span> gespeicherten, personenbezogenen Daten entfällt. <span class="Kommentar">[Bsp.: vollständige Beantwortung/Bearbeitung einer Anfrage]</span></li>
+        </ul lang="en" class="Liste">
+        <ul>
+          <li>you request the Deletion of your stored/collected personal data.</li>
+          <li>you revoke your consent for the storage of your stored/collected personal data.</li>
+          <li>the purpose of the storage of your stored/collected personal is inapplicable. <span class="Kommentar">[e.g.: completely answered/processed request]</span></li>
+        </ul>
+
+        <p lang="de" class="AktuelleSprache">Zwingende, gesetzliche Bestimmungen, wie beispielsweise Aufbewahrungsfristen, bleiben hiervon unberührt.</p>
+        <p lang="en">Mandatory legal regulations, such as retention periods, remain unaffected.</p>
+      </section>
+
+      <section>
+        <h5 lang="de" class="AktuelleSprache">Anfrage via E-Mail, Telefon oder Telefax</h5>
+        <h5 lang="en">Requests via E-Mail, Telephone or Fax</h5>
+
+        <p lang="de" class="AktuelleSprache">Geht von <span class="AnredeSie">Ihrer</span><span class="AnredeDu">Deiner</span> Seite eine Anfrage über via E-Mail, Telefon oder Telefax ein, werden sowohl die Anfrage wie auch <span class="AnredeSie">Ihre</span><span class="AnredeDu">Deine</span> daraus hervorgehenden personenbezogenen Daten <span class="Kommentar">[Bsp.: Name]</span> zum Zweck der Bearbeitung <span class="AnredeSie">Ihrer</span><span class="AnredeDu">Deiner</span> Anfrage gespeichert. Diese Daten werden nicht ohne Ihre Genehmigung weitergegeben.</p>
+        <p lang="en">If you submit a request via E-Mail, Telephone or Fax, the request as well as the personal data <span class="Kommentar">[e.g.: Name]</span> contained are stored for the purpose of processing your request. This data is not passed on, without your consent.</p>
+
+        <p lang="de" class="AktuelleSprache">Die Verarbeitung dieser Daten erfolgt damit also auf der Basis von Art. 6 Abs. 1 lit. b DSGVO, wenn</p>
+        <p lang="en">The processing of this data is therefore based on Art. 6 Para. 1 lit. b DSGVO, if</p>
+
+        <ul lang="de" class="Liste AktuelleSprache">
+          <li>die Anfrage mit der Erfüllung eines Vertrages zusammenhängt.</li>
+          <li>die Verarbeitung dieser Daten für die Durchführung vorvertraglicher Maßnahmen erforderlich ist.</li>
+        </ul>
+        <ul lang="en" class="Liste">
+          <li>the request is connected to the fulfillment of a contract.</li>
+          <li>the processing of the data is necessary for the execution of pre-contractual measures.</li>
+        </ul>
+
+        <p lang="de" class="AktuelleSprache">Ansonsten erfolgt die Verarbeitung dieser Daten auf Basis <span class="AnredeSie">Ihrer</span><span class="AnredeDu">Deiner</span> Einwilligung <sup>[Art. 6 Abs. 1 lit. a DSGVO]</sup> und/oder auf den berechtigten Interessen des Diensteanbieters <span class="Kommentar">[Seiteninhabers dieser Webseite]</span> – André-Pascal Werthwein – <sup>[Art. 6 Abs. 1 lit. f DSGVO]</sup>, da ein berechtigtes Interesse an der Bearbeitung der an den Diensteanbieter <span class="Kommentar">[Seiteninhaber dieser Webseite]</span> – André-Pascal Werthwein – gerichteten Anfragen besteht.</p>
+        <p lang="en">Otherwise, the processing of data is basis on your consent <sup>[Art. 6 Abs. 1 lit. a DSGVO]</sup> and/or on the legitimate interests of the service provider <span class="Kommentar">[Owner of this Website]</span> – André-Pascal Werthwein — <sup>[Art. 6 Abs. 1 lit. f DSGVO]</sup>, since the service provider <span class="Kommentar">[Owner of this Website]</span> – André-Pascal Werthwein — has the legitimate interest to process the requestsd directed at him.</p>
+
+        <p>Die von <span class="AnredeSie">Ihnen</span><span class="AnredeDu">Dir</span>, via E-Mail, Telefon oder Telefax, übermittelten Daten werden vom Diensteanbieter <span class="Kommentar">[Seiteninhaber dieser Webseite]</span> – André-Pascal Werthwein – gespeichert. Diese Daten werden solange gespeichert bis,</p>
+        <p>The data that was transmitted by you using the contact form is stored by the service provider <span class="Kommentar">[Owner of this Website]</span> – André-Pascal Werthwein. This data is stored until</p>
+
+        <ul lang="de" class="Liste AktuelleSprache">
+          <li><span class="AnredeSie">Sie</span><span class="AnredeDu">Du</span> die Löschung, der von <span class="AnredeSie">Ihnen</span><span class="AnredeDu">Dir</span> gespeicherten, personenbezogenen Daten verlangen.</li>
+          <li><span class="AnredeSie">Sie Ihre</span><span class="AnredeDu">Du Deine</span> Einwilligung zur Speicherung der von <span class="AnredeSie">Ihnen</span><span class="AnredeDu">Dir</span> gespeicherten, personenbezogenen Daten widerrufen.</li>
+          <li>der Zweck für die Speicherung <span class="AnredeSie">Ihrer</span><span class="AnredeDu">Deiner</span> gespeicherten, personenbezogenen Daten entfällt. <span class="Kommentar">[Bsp.: vollständige Beantwortung/Bearbeitung einer Anfrage]</span></li>
+        </ul>
+        <ul lang="en" class="Liste">
+          <li>you request the Deletion of your stored/collected personal data.</li>
+          <li>you revoke your consent for the storage of your stored/collected personal data.</li>
+          <li>the purpose of the storage of your stored/collected personal is inapplicable. <span class="Kommentar">[e.g.: completely answered/processed request]</span></li>
+        </ul>
+
+        <p lang="de" class="AktuelleSprache">Zwingende, gesetzliche Bestimmungen, wie beispielsweise Aufbewahrungsfristen, bleiben hiervon unberührt.</p>
+        <p lang="en">Mandatory legal regulations, such as retention periods, remain unaffected.</p>
+      </section>
+
+      <section>
+        <h4 lang="de" class="AktuelleSprache">4. Plugins und Tools</h4>
+        <h4 lang="en">4. Plugins and Tools</h4>
+
+        <h5>Google Web Fonts</h5>
+
+        <p lang="de" class="AktuelleSprache">Diese Webseite benutzt für die einheitliche <span class="Kommentar">[nutzerunabhängige]</span> Darstellung von Schriftarten und Icons sogenannte Web Fonts beziehungsweise Icon Fonts. Diese Webseite verwendet dafür insbesondere folgende Web Fonts, die von Google bereitgestellt werden:</p>
+        <p lang="en">This Website uses for the uniform <span class="Kommentar">[user-independent]</span> display of Typefaces and Icons so-called Web Fonts or Icon Fonts. This Website therefore uses the following Web Font provided by Google:</p>
+
+        <ul class="Liste">
+          <li>Roboto <span class="Kommentar">[Light, 300]</span></li>
+          <li>Roboto <span class="Kommentar">[Bold, 700]</span></li>
+          <li>Noto Sans JP <span class="Kommentar">[Light, 300]</span></li>
+          <li>Noto Sans JP <span class="Kommentar">[Bold, 700]</span></li>
+          <li>Google Material Icons <span class="Kommentar">[Icon Font]</span></li>
+        </ul>
+
+        <p lang="de" class="AktuelleSprache">Diese Schriftarten werden lokal – von dem Server dieser Webseite – bereitgestellt. Eine Verbindung zu den Servern von Google findet dabei nicht statt.</p>
+        <p lang="en">These typefaces are provided locally — on the Server of this Website. A connection to the servers of Google does not take place.</p>
+      </section>
+    </div>
+  </div>
+
+  <footer class="RechtlicheVerweise Anzeige">
+    <div>
+      <a lang="de" class="AktuelleSprache" href="kontakt.html" target="_blank" rel="noopener noreferrer nofollow">Kontakt</a>
+      <a lang="en" href="kontakt.html#Englisch" target="_blank" rel="noopener noreferrer nofollow">Contact</a>
+      <a lang="de" class="AktuelleSprache" href="impressum.html" target="_blank" rel="noopener noreferrer nofollow">Impressum</a>
+      <a lang="en" href="impressum.html#Englisch" target="_blank" rel="noopener noreferrer nofollow">Imprint</a>
+      <a lang="de" class="AktuelleSprache" href="datenschutz.html" target="_blank" rel="noopener noreferrer nofollow">Datenschutz</a>
+      <a lang="en" href="datenschutz.html#Englisch" target="_blank" rel="noopener noreferrer nofollow">Data Security</a>
+    </div>
+  </footer>
+
+  <script src="javascript/warnung.js"></script>
+  <script src="javascript/themennavigation.js"></script>
+  <script src="javascript/sprache.js"></script>
+</body>
+
+</html>

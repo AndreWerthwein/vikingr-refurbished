@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="author" content="André-Pascal Werthwein" />
+  <meta name="copyright" content="André-Pascal Werthwein" />
+  <meta name="publisher" content="www.andrewerthwein.de" />
+  <meta name="title" lang="DE" content="Reiche Europas — Die Víkingr" />
+  <meta name="title" lang="EN" content="Kingdoms of Europe — The Víkingr" />
+  <meta name="page-topic" lang="DE" content="Web Design, Web Development, Navigationsdesign" />
+  <meta name="page-topic" lang="EN" content="Web Design, Web Development, Navigationsdesign" />
+  <meta name="audience" lang="DE" content="Alle" />
+  <meta name="audience" lang="EN" content="All" />
+  <meta name="page-type" lang="DE" content="Projekt-Webseite" />
+  <meta name="page-type" lang="EN" content="Project-Website" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta http-equiv="language" content="DE" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="page title">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="format-detection" content="address=no">
+  <meta name="robots" content="index, follow" />
+  <meta name="revisit-after" content="30 days" />
+  <meta name="expires" content="never" />
+  <meta name="allow-search" content="yes" />
+  <meta name="google" content="nositelinkssearchbox" />
+  <meta name="googlebot" content="noarchive" />
+  <meta name="keywords" content="Wikinger, Vikings, Víkingr, Schweden, Norwegen, Dänemark, Sweden, Norway, Denmark, Schwedisch, Norwegisch, Dänisch, Daenisch, Swedish, Dutch, Seefahrer, Krieger, Seafarer, Sea, Ocean, Warrior, Händler, Haendler, Merchant, Axt, Axe, Krieg, War, Raub, Angriff, Attacke, Überfall, Ueberfall, Plünderung, Pluenderung, Robbery, Assault, Attack, Raid, Invasion, Hochschule Mannheim, Mannheim, Fakultät für Gestaltung, Fakultaet fuer Gestaltung, Faculty of Design, Institute of Design, Fak D, Kommunikationsdesign, Communicational Design, Communication Design, Graphic Desig, Grafik Design, VND, Navigationsdesign, Navigational Design, Professor, Veruschka, Götz, Goetz, Web Design, Web Programmierung, Web Development, HTML, CSS, Javascript, Java Script, PHP, Interaction Design, User Experience Design, UX Design, Usability, Norse, Mythologie, Mythology, Myths, Asgard, Midgard, Biförst, Bifroest, Odin, Thor, Loki, Vé, Vili, Yggdrasil, Baldr, Freyja" />
+  <meta name="description" lang="DE" content="Die thematische Betrachtung des Reiches der Wikinger im Rahmen dieses Projekts ist vielschichtig. Nicht nur setzt sich das Projekt mit dem Aufstieg und Niedergang einer Reiches — wenn man hier von einem solchen sprechen kann — auseinander, sondern setzt auch das ureigene Wesen der Wikinger dem Wesen der nordischen Mythologie gegenüber. Gibt es Parallelen zwischen den Göttern und den Wikingern? Sind die Götter nur eine Projektion des Wikingergeistes? Wer hat wen nach wessen Ebenbild geschaffen?" />
+  <meta name="description" lang="EN" content="The thematic view on the Empire of the Vikings in this project is complex. Not only does the project deal with the Rise and Fall of an Empire — if it even can be called an Empire in this case — but it also exposes the essence of the Vikings to the essence of Norse Mythology. Are there any parallels between the Gods and the Vikings? Are the gods just a projection of the Viking-Spirit? Who made whom on whose likeness?" />
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="icon" type="image/png" href="favicon_32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="favicon_96x96.png" sizes="96x96">
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="fallback-touch-icon-57x57-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="fallback-touch-icon-57x57-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="60x60" href="universal-touch-icon-60x60-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-ipad1-ipad2-ipad-mini-non-retina-ios6-touch-icon-72x72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="apple-ipad1-ipad2-ipad-mini-non-retina-ios7-touch-icon-76x76-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-iphone4+-ipod-touch-retina-ios6-touch-icon-114x114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="apple-iphone4+-ipod-touch-retina-ios7-touch-icon-120x120-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-ipad-retina-ios6-touch-icon-144x144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="touch-icon-ipad.png">
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="apple-ipad-retina-ios7-touch-icon-152x152-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="167x167" href="touch-icon-ipad-retina.png">
+  <link rel="apple-touch-icon-precomposed" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="shortcut icon" sizes="196x196" href="chromeapp-touch-icon-196x196-precomposed.png">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="mstile-144x144.png">
+
+  <link rel="stylesheet" href="css/fonts.min.css" />
+  <link rel="stylesheet" href="css/reset.min.css" />
+  <link rel="stylesheet" href="css/browser.min.css" />
+  <link rel="stylesheet" href="css/typografie.min.css" />
+  <link rel="stylesheet" href="css/struktur.min.css" />
+  <link rel="stylesheet" href="css/formulare.min.css" />
+  <link rel="stylesheet" href="css/animation.min.css" />
+  <link rel="stylesheet" href="css/verbote.min.css" />
+
+  <title>Víkingr — Aufstieg und Niedergang eines Reiches</title>
+</head>
+
+<body>
+  <nav id="ThemenNavigation">
+    <section>
+      <i class="material-icons Anzeige" id="ScrollingStart">first_page</i>
+    </section>
+    <section>
+      <ul lang="de" class="AktuelleSprache" data-navigation="Sprache">
+        <li data-navigation="Sprache">Sprache</li>
+        <li data-sprache="Deutsch" class="Fett">Deutsch</li>
+        <li data-sprache="Englisch">Englisch</li>
+      </ul>
+      <ul lang="en" data-navigation="Sprache">
+        <li data-navigation="Sprache">Language</li>
+        <li data-sprache="Deutsch">German</li>
+        <li data-sprache="Englisch">English</li>
+      </ul>
+    </section>
+    <section>
+      <ul lang="de" class="AktuelleSprache" data-navigation="Thema">
+        <li data-navigation="Thema"><span class="Kommentar">[X,&nbsp;Y]&nbsp;</span>Kapitel wählen ...</li>
+        <li><a href="dokumentation.html" target="_blank" rel="noopener noreferrer"><span class="Kommentar">[D,&nbsp;D]&nbsp;</span>Dokumentation</a></li>
+        <li><a href="quellen.html" target="_blank" rel="noopener noreferrer nofollow"><span class="Kommentar">[Q,&nbsp;Q]&nbsp;</span>Quellen</a></li>
+      </ul>
+
+      <ul lang="en" data-navigation="Thema">
+        <li data-navigation="Thema"><span class="Kommentar">[X,&nbsp;Y]&nbsp;</span>Choose a chapter ...</li>
+        <li><a href="dokumentation.html" target="_blank" rel="noopener noreferrer"><span class="Kommentar">[D,&nbsp;D]&nbsp;</span>Documentation</a></li>
+        <li><a href="quellen.html" target="_blank" rel="noopener noreferrer nofollow"><span class="Kommentar">[Q,&nbsp;Q]&nbsp;</span>Sources</a></li>
+      </ul>
+    </section>
+    <section></section>
+    <section></section>
+  </nav>
+
+  <!-- Java Script Warnung -->
+  <marquee id="JavaScriptWarnung" class="Anzeige">Bitte aktivieren sie Java Script auf dieser Website für den vollen Funktionsumfang. Please activate Java Script for this website, to experience the full functionality.</marquee>
+
+  <div class="Screen">
+    <div class="KoordinatenTitel">
+      <h1>[D,&nbsp;D]</h1>
+      <h2 lang="de" class="AktuelleSprache">Die Dokumentation</h2>
+      <h2 lang="en">The Documentation</h2>
+    </div>
+
+    <div class="ZweiSpalten">
+      <section class="KorrekturQuellen">
+        <h4 lang="de" class="AktuelleSprache">Das Konzept</h4>
+        <h4 lang="en">The Concept</h4>
+
+        <p lang="de" class="AktuelleSprache">Technisch und versionsorientiert habe ich dieses Projekt auf GitHub dokumentiert. Das entsprechende GitHub-Repository findest Du hier: <a class="LinkText" href="https://github.com/AndreWerthwein/vikingr" target="_blank" rel="noopener nofollow noreferrer">Víkingr</a> <span class="Kommentar">[GitHub]</span>.</p>
+        <p lang="en">Technical and version oriented I documented this project on GitHub. The corresponding GitHub Repository you will find here: <a class="LinkText" href="https://github.com/AndreWerthwein/vikingr" target="_blank" rel="noopener nofollow noreferrer">Víkingr</a> <span class="Kommentar">[GitHub]</span>.</p>
+
+        <p lang="de" class="AktuelleSprache">Im Folgenden findest Du hier originale Zwischenpräsentationen, die verschiedene konzeptionelle Stadien des Projekts <q><abbr title="ˈviːkɪŋɐ">Víkingr</abbr></q> abbilden und erläutern.</p>
+        <p lang="en">Subsequently, you will find real intermediate presentations, which depict and explain different conceptual stages of the project <q><abbr title="ˈviːkɪŋɐ">Víkingr</abbr></q>. <span class="Kommentar">[The presentations are available in German only.]</span></p>
+
+        <div class="Dokumente">
+          <section>
+            <p lang="de" class="AktuelleSprache">Diese Präsentation fasst kurz das gewählte Thema, wie auch einige erste Recherchen zusammen und bildet die Basis für die Entwicklung des Konzepts.</p>
+            <p lang="en">This presentation summarizes the picked topic, as well as first research and is the basis for developing the concept.</p>
+
+            <table lang="de" class="DokumenteTabelle AktuelleSprache">
+              <thead></thead>
+              <tbody>
+                <tr>
+                  <td><p><i class="material-icons">description</i></td>
+                  <td>
+                    <p><a class="LinkText" href="media/dokumentation/20181029.pdf" target="_blank" rel="noopener noreferrer nofollow">Die Themenwahl</a><span class="Kommentar">&nbsp;[2018/10/29]</span></p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table lang="en" class="DokumenteTabelle">
+              <thead></thead>
+              <tbody>
+                <tr>
+                  <td><p><i class="material-icons">description</i></td>
+                  <td>
+                    <p><a class="LinkText" href="media/dokumentation/20181029.pdf" target="_blank" rel="noopener noreferrer nofollow">The choice of Topic</a><span class="Kommentar">&nbsp;[2018/10/29]&nbsp;[GER]</span></p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <br>
+
+            <p lang="de" class="AktuelleSprache">Diese Präsentation stellt in Form eines Organigramms den Aufbau der Website und die Verteilung der Inhalte dar.</p>
+            <p lang="en">This presentation depicts the structure as well as the arrangement of contents within the website, using an organizational diagram.</p>
+
+            <table lang="de" class="DokumenteTabelle AktuelleSprache">
+              <thead></thead>
+              <tbody>
+                <tr>
+                  <td><p><i class="material-icons">description</i></td>
+                  <td>
+                    <p><a class="LinkText" href="media/dokumentation/20181105.pdf" target="_blank" rel="noopener noreferrer nofollow">Das Organigramm</a><span class="Kommentar">&nbsp;[2018/11/05]</span></p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table lang="en" class="DokumenteTabelle">
+              <thead></thead>
+              <tbody>
+                <tr>
+                  <td><p><i class="material-icons">description</i></td>
+                  <td>
+                    <p><a class="LinkText" href="media/dokumentation/20181105.pdf" target="_blank" rel="noopener noreferrer nofollow">The organizational Diagram</a><span class="Kommentar">&nbsp;[2018/11/05]&nbsp;[GER]</span></p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <br>
+
+            <p lang="de" class="AktuelleSprache">Diese Präsentation stellt die Komposition von Inhalten, wie auch erste detaillierte Layouts einzelner Inhalte vor. Außerdem enthält die Präsentation einen ersten Zeitplan.</p>
+            <p lang="en">This presentation depicts the composition of content, as well as first detailed Layouts. Furthermore, this presentation contains a first production schedule.</p>
+
+            <table lang="de" class="DokumenteTabelle AktuelleSprache">
+              <thead></thead>
+              <tbody>
+                <tr>
+                  <td><p><i class="material-icons">description</i></td>
+                  <td>
+                    <p><a class="LinkText" href="media/dokumentation/20181126.pdf" target="_blank" rel="noopener noreferrer nofollow">Die Kompositon</a><span class="Kommentar">&nbsp;[2018/11/26]</span></p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table lang="en" class="DokumenteTabelle">
+              <thead></thead>
+              <tbody>
+                <tr>
+                  <td><p><i class="material-icons">description</i></td>
+                  <td>
+                    <p><a class="LinkText" href="media/dokumentation/20181126.pdf" target="_blank" rel="noopener noreferrer nofollow">The Composition</a><span class="Kommentar">&nbsp;[2018/11/26]&nbsp;[GER]</span></p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <br>
+
+            <p lang="de" class="AktuelleSprache">Diese Präsentation stellt das detaillierte Layout aller Inhalte dar.</p>
+            <p lang="en">This presentation depicts the detailed layout of all contents.</p>
+
+            <table lang="de" class="DokumenteTabelle AktuelleSprache">
+              <thead></thead>
+              <tbody>
+                <tr>
+                  <td><p><i class="material-icons">description</i></td>
+                  <td>
+                    <p><a class="LinkText" href="media/dokumentation/20181203.pdf" target="_blank" rel="noopener noreferrer nofollow">Das Layout</a><span class="Kommentar">&nbsp;[2018/12/03]</span></p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table lang="en" class="DokumenteTabelle">
+              <thead></thead>
+              <tbody>
+                <tr>
+                  <td><p><i class="material-icons">description</i></td>
+                  <td>
+                    <p><a class="LinkText" href="media/dokumentation/20181203.pdf" target="_blank" rel="noopener noreferrer nofollow">The Layout</a><span class="Kommentar">&nbsp;[2018/12/03]&nbsp;[GER]</span></p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <br>
+
+            <p lang="de" class="AktuelleSprache">Diese Präsentation stellt detailliert da, welche Tonalität für die unterschiedlichen Inhalte des Projekts gewählt werden sollte. Die Präsentation beinhaltet außerdem einen minimalen Styleguide für die Illustrationen innerhalb des Projekts.</p>
+            <p lang="en">This presentation shows in detail which tonality should be chosen for the different contents of this project. This presentation also contains a small styleguide for the illustrations used within the project.</p>
+
+            <table lang="de" class="DokumenteTabelle AktuelleSprache">
+              <thead></thead>
+              <tbody>
+                <tr>
+                  <td><p><i class="material-icons">description</i></td>
+                  <td>
+                    <p><a class="LinkText" href="media/dokumentation/20181217.pdf" target="_blank" rel="noopener noreferrer nofollow">Die Tonality</a><span class="Kommentar">&nbsp;[2018/12/17]</span></p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table lang="en" class="DokumenteTabelle">
+              <thead></thead>
+              <tbody>
+                <tr>
+                  <td><p><i class="material-icons">description</i></td>
+                  <td>
+                    <p><a class="LinkText" href="media/dokumentation/20181217.pdf" target="_blank" rel="noopener noreferrer nofollow">The Tonality</a><span class="Kommentar">&nbsp;[2018/12/17]&nbsp;[GER]</span></p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <br>
+
+            <p lang="de" class="AktuelleSprache">Diese Präsentation befasst sich mit der Wichtigkeit des <q>Responsive Design</q> und beschreibt die Übersetzung der gegebenen Strukturen des <q>Desktop Design</q> in das <q>Responsive Design</q>.</p>
+            <p lang="en">This presentation is about the importance of <q>Responsive Design</q> and also depicts the translation of the given structure of the <q>Desktop Design</q> in to the <q>Responsive Design</q>.</p>
+
+            <table lang="de" class="DokumenteTabelle AktuelleSprache">
+              <thead></thead>
+              <tbody>
+                <tr>
+                  <td><p><i class="material-icons">description</i></td>
+                  <td>
+                    <p><a class="LinkText" href="media/dokumentation/20190107.pdf" target="_blank" rel="noopener noreferrer nofollow">Das Responsive Design</a><span class="Kommentar">&nbsp;[2019/01/07]</span></p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table lang="en" class="DokumenteTabelle">
+              <thead></thead>
+              <tbody>
+                <tr>
+                  <td><p><i class="material-icons">description</i></td>
+                  <td>
+                    <p><a class="LinkText" href="media/dokumentation/20190107.pdf" target="_blank" rel="noopener noreferrer nofollow">The Responsive Design</a><span class="Kommentar">&nbsp;[2019/01/07]&nbsp;[GER]</span></p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <br>
+
+            <p lang="de" class="AktuelleSprache">Hier ist das abschließende, dokumentierende Poster-Design zu sehen.</p>
+            <p lang="en">Here the concluding and documenting Poster-Design can be seen.</p>
+
+            <table lang="de" class="DokumenteTabelle AktuelleSprache">
+              <thead></thead>
+              <tbody>
+                <tr>
+                  <td><p><i class="material-icons">description</i></td>
+                  <td>
+                    <p><a class="LinkText" href="media/dokumentation/poster.pdf" target="_blank" rel="noopener noreferrer nofollow">Das Plakat</a><span class="Kommentar">&nbsp;[2019/01/22]&nbsp;[PLAKAT]</span></p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table lang="en" class="DokumenteTabelle">
+              <thead></thead>
+              <tbody>
+                <tr>
+                  <td><p><i class="material-icons">description</i></td>
+                  <td>
+                    <p><a class="LinkText" href="media/dokumentation/poster.pdf" target="_blank" rel="noopener noreferrer nofollow">The Poster</a><span class="Kommentar">&nbsp;[2019/01/22]&nbsp;[POSTER]</span></p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <br>
+
+            <p lang="de" class="AktuelleSprache">Dieses Dokument stellt das Branding dar und erläutert sowohl das Raster wie auch den inhaltsbasierten Aufbau. Außerdem erläutert das Dokument die Zusammenhänge zwischen dem Branding und dem Navigations- und Orientierungssystem des Projekts.</p>
+            <p lang="en">This document depicts the Branding and also explains the Grid as well as the content-based structure. Furthermore, this documents explains how the Branding is connected to the Navigation- and Orientation-System of the project.</p>
+
+            <table lang="de" class="DokumenteTabelle AktuelleSprache">
+              <thead></thead>
+              <tbody>
+                <tr>
+                  <td><p><i class="material-icons">description</i></td>
+                  <td>
+                    <p><a class="LinkText" href="media/dokumentation/branding.pdf" target="_blank" rel="noopener noreferrer nofollow">Das Branding</a><span class="Kommentar">&nbsp;[2019/01/22]&nbsp;[BRANDING]</span></p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table lang="en" class="DokumenteTabelle">
+              <thead></thead>
+              <tbody>
+                <tr>
+                  <td><p><i class="material-icons">description</i></td>
+                  <td>
+                    <p><a class="LinkText" href="media/dokumentation/branding.pdf" target="_blank" rel="noopener noreferrer nofollow">The Branding</a><span class="Kommentar">&nbsp;[2019/01/22]&nbsp;[BRANDING]</span></p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <br>
+
+            <p lang="de" class="AktuelleSprache">Dieses Dokument listet alle Features auf, die Teil des Projekts <q><abbr title="ˈviːkɪŋɐ">Víkingr</abbr></q> sind. Diese Features beschäftigen sich sowohl mit Design und Funktionalität, als auch mit Webseiten-Konfigurationen, wie das <q>Search Engine Optimizing</q> und andere.</p>
+            <p lang="en">This document simply lists all the features, that are part of the project <q><abbr title="ˈviːkɪŋɐ">Víkingr</abbr></q>. These features include Design, Functionality and also Meta-Features that are part of Website-Configurations, such as <q>Search Engine Optimizing</q> and others.</p>
+
+            <table lang="de" class="DokumenteTabelle AktuelleSprache">
+              <thead></thead>
+              <tbody>
+                <tr>
+                  <td><p><i class="material-icons">description</i></td>
+                  <td>
+                    <p><a class="LinkText" href="media/dokumentation/features.pdf" target="_blank" rel="noopener noreferrer nofollow">Die Features</a><span class="Kommentar">&nbsp;[2019/01/22]&nbsp;[FEATURES]</span></p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table lang="en" class="DokumenteTabelle">
+              <thead></thead>
+              <tbody>
+                <tr>
+                  <td><p><i class="material-icons">description</i></td>
+                  <td>
+                    <p><a class="LinkText" href="media/dokumentation/features.pdf" target="_blank" rel="noopener noreferrer nofollow">The Features</a><span class="Kommentar">&nbsp;[2019/01/22]&nbsp;[FEATURES]&nbsp;[GER]</span></p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+          </section>
+        </div>
+      </section>
+      <section>
+        <h4 lang="de" class="AktuelleSprache">Der Kurs & Das Projekt</h4>
+        <h4 lang="en">The Course & The Project</h4>
+
+        <p lang="de" class="AktuelleSprache">Im Wintersemester 2018/19 habe ich an dem Kurs <q>Navigationsdesign</q>, geleitet von Frau Professor Veruschka Götz, an der Hochschule Mannheim teilgenommen. Dieser Kurs setzte sich über das Semester hinweg mit zahlreichen Aspekten der Gestaltung von Navigations- und Orientierungssystemen auseinander. Neben der Navigation und Orientierung im Raum stand hier vor allem die Navigation und Orientierung in digitalen Medien (Webseiten, Apps) im Zentrum.  </p>
+        <p lang="en">During the winter semester 2018/19 I took part in the course <q>Navigation Design</q>, lead by Mrs. Professor Veruschka Götz, at the Hochschule Mannnheim. During the semester this course dealt with different aspects of Navigation and Orientation Systems. Apart from Navigation and Orientation in spaces, the course mainly focused on Navigation and Orientation in digital Media (Websites, Apps).</p>
+
+        <p lang="de" class="AktuelleSprache">Selbstverständlich hat sich der Kurs nicht auf das theoretische Verständnis beschränkt. Die in dem Kurs erworben Kenntnisse wurden direkt in einem komplexen Konzept zu dem übergeordneten Thema <q>Vergangene Reiche</q> angewendet. Im Rahmen eben dieses Projekts habe ich mich dem Thema <q>Wikinger</q> gewidmet. Für dieses Thema habe ich eine Webseite gestaltet, die nicht nur ein breites Spektrum an recherchierten Informationen sowie Querbezüge zu verwandten Themen wiedergibt, sondern sich darüber hinaus einem geordneten und konzeptionell durchdachten — wenn auch nicht unkomplizierten — Navigations- und Orientierungssystem bedient. Die Navigation und Orientierung innerhalb des Projekts ist dabei auf ein eingeschränktes und strategisch eingepasstes Koordinatensystem gestützt. Dem Nutzer werden dabei auch diverse Möglichkeiten zur Navigation innerhalb des Projekts geboten; On-Screen-Steuerung, themenorientierte Steuerung und auch eine Tastatursteuerung.</p>
+        <p lang="en">Of course this course was not limited to the gain of theoretical knowledge. The knowledge gained in this course was instantly put to use in a complex project under the topic of <q>Transient Empires</q>. Within this project I dedicated my work to the topic <q>Vikings</q>. For this project I created a website, which not only renders researched information as well as related topics, but also uses a structured and conceptual well-thought-out — but not really uncomplicated — Navigation and Orientation System. The Navigation as well as the Orientation are both based on a restricted and strategically fitted coordinate system. The user is offered a few different options to navigate on the website, such as On-Screen-Navigation, topic-based Navigation as well as a keyboard-based Navigation.</p>
+
+        <p lang="de" class="AktuelleSprache">Erlebe das Projekt <a href="index.html"><span class="LinkText">hier</span></a>.</p>
+        <p lang="en">Experience the project <a href="index.html"><span class="LinkText">here</a>.</p>
+      </section>
+    </div>
+  </div>
+
+  <footer class="RechtlicheVerweise Anzeige">
+    <div>
+      <a lang="de" class="AktuelleSprache" href="kontakt.html" target="_blank" rel="noopener noreferrer nofollow">Kontakt</a>
+      <a lang="en" href="kontakt.html#Englisch" target="_blank" rel="noopener noreferrer nofollow">Contact</a>
+      <a lang="de" class="AktuelleSprache" href="impressum.html" target="_blank" rel="noopener noreferrer nofollow">Impressum</a>
+      <a lang="en" href="impressum.html#Englisch" target="_blank" rel="noopener noreferrer nofollow">Imprint</a>
+      <a lang="de" class="AktuelleSprache" href="datenschutz.html" target="_blank" rel="noopener noreferrer nofollow">Datenschutz</a>
+      <a lang="en" href="datenschutz.html#Englisch" target="_blank" rel="noopener noreferrer nofollow">Data Security</a>
+    </div>
+  </footer>
+
+  <script src="javascript/warnung.js"></script>
+  <script src="javascript/themennavigation.js"></script>
+  <script src="javascript/sprache.js"></script>
+</body>
+
+</html>
